@@ -58,7 +58,7 @@ public class TrafficAnimationCE extends JPanel
 
 	private int angle;
 
-	/* This method draws on the panel's Graphics context.
+	/** This method draws on the panel's Graphics context.
 	 * This is where the majority of your work will be.
 	 *
 	 * (non-Javadoc)
