@@ -14,6 +14,12 @@ public class ChooseNumber
 
         boolean done = false;
 
+        if (   (true || false)
+            && (false || true))
+        {
+            
+        }
+
         while (!done)
         {
             // if the answer is guessed correctly
