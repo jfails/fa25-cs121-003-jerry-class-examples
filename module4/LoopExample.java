@@ -22,14 +22,23 @@ public class LoopExample {
         // // always remember to close your Scanner
         // keyboard.close();
 
-        // EXAMPLE: loop to show characters (and simple character math)
-        // setting up variables
-        char c = '\u1E0B'; //keyboard.nextLine().charAt(0);
-        while (c < 10000)
-        {
-            System.out.print(c + " ");
-            c++;
-        }
+        // // EXAMPLE: loop to show characters (and simple character math)
+        // // setting up variables
+        // char c = '\u1E0B'; //keyboard.nextLine().charAt(0);
+        // while (c < 10000)
+        // {
+        //     System.out.print(c + " ");
+        //     c++;
+        // }
+
+        Scanner keyScanner = new Scanner(System.in);
+
+        System.out.print("Give me a number: ");
+        float number = Float.parseFloat(keyScanner.nextLine());
+
+        keyScanner.close();
+
+        System.out.println("The number is: " + number);
 
     }
     
