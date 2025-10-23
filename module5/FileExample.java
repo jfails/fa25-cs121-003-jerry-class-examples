@@ -42,7 +42,6 @@ public class FileExample {
             fnfe.printStackTrace();
         }
 
-
         
     }
 }
