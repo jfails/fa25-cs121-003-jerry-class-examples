@@ -4,7 +4,7 @@ import java.util.Random;
  * A Die class that represents a multi-faced die and it's current face value.
  * @author Jerry Fails
  */
-public class Die 
+public class Die implements Rollable, Comparable<Die>
 {
     // FIELDS
     private int numSides;
@@ -15,7 +15,7 @@ public class Die
     /**
      * Default constructor sets the number of sides to 6, and randomly sets the face value.
      */
-    public Die()
+    public Die() 
     { 
         this.numSides = 6;
         this.randomGen = new Random();
@@ -34,6 +34,11 @@ public class Die
     }
 
     // METHODS
+    public int getFaceValue()
+    {
+        return faceValue;
+    }
+
 
     /**
      * Rolls the die and returns the value.
@@ -63,5 +68,10 @@ public class Die
             System.out.print("die1: " + die1 + "\t");
             System.out.println("die1: " + die2);
         }
+    }
+
+    @Override
+    public int compareTo(Die arg0) {
+        return faceValue - arg0.getFaceValue();
     }    
 }
