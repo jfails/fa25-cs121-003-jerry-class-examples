@@ -27,5 +27,8 @@ public class Student
     public static void main(String[] args) {
         Student s1 = new Student("Andrew");
         System.out.println(s1);
+
+        StudentClassification sc1 = StudentClassification.valueOf("SOMETHING"); //StudentClassification.SENIOR;
+        System.out.println(sc1);
     }
 }

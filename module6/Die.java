@@ -6,7 +6,11 @@ import java.util.Random;
  */
 public class Die implements Rollable, Comparable<Die>
 {
+    // STATIC VARIABLE
+    private static int numDice = 0;
+    
     // FIELDS
+    private int id;
     private int numSides;
     private int faceValue;
     private Random randomGen;
@@ -17,6 +21,8 @@ public class Die implements Rollable, Comparable<Die>
      */
     public Die() 
     { 
+        numDice++;
+        this.id = numDice;
         this.numSides = 6;
         this.randomGen = new Random();
         this.roll();
@@ -28,6 +34,8 @@ public class Die implements Rollable, Comparable<Die>
      */
     public Die(int numSides)
     {
+        numDice++;
+        this.id = numDice;
         this.numSides = numSides;
         this.randomGen = new Random();
         this.roll();
@@ -52,7 +60,7 @@ public class Die implements Rollable, Comparable<Die>
 
     public String toString()
     {
-        return "Die[" + numSides + "]: " + faceValue;
+        return "Die[" + id+ ","+ numSides + "]: " + faceValue;
     }
 
     public static void main(String[] args) 
@@ -66,7 +74,7 @@ public class Die implements Rollable, Comparable<Die>
             die1.roll();
             die2.roll();
             System.out.print("die1: " + die1 + "\t");
-            System.out.println("die1: " + die2);
+            System.out.println("die2: " + die2);
         }
     }
 
