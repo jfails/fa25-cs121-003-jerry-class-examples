@@ -2,7 +2,7 @@
  * An example to show reversing the order of things in an array.
  * @author Jerry Fails
  */
-public class ReverseOrder {
+public class ReverseOrder  {
     public static void main(String[] args) {
         
         // create an array
