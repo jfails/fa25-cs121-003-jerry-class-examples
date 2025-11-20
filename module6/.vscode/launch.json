@@ -1,0 +1,29 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CommandLine",
+            "request": "launch",
+            "mainClass": "CommandLine",
+            "projectName": "module6_a2ad932f",
+            "args": [
+                "Survey1.dat",
+                "3"
+            ]
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}",
+            "args": [
+                "Survey1.dat",
+                "3"
+            ]
+        }
+    ]
+}
