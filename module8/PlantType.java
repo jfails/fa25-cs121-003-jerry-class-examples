@@ -1,0 +1,3 @@
+public enum PlantType {
+    POTATOES, CORN, TOMATOES, CUCUMBER, RASPBERRIES
+}
